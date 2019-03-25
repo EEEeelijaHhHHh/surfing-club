@@ -1,0 +1,108 @@
+.header {
+
+  &__slider {
+    &-item {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &-desc {
+      opacity: 0.9;
+      color: $main-color;
+      font-family: "League Spartan";
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+    }
+
+    &-title {
+      color: #0b0c11;
+      font-family: "Playfair Display";
+      font-size: 62px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    &-text {
+      width: 390px;
+      color: #8f8f8f;
+      font-weight: 300;
+      line-height: (24 / 14);
+      letter-spacing: 0.35px;
+      margin: 0;
+    }
+
+    &-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      color: #ebebeb;
+      font-family: "League Spartan";
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      &-arrow {
+        width: 10px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &-left {
+          background: url('../img/icons/header__left-arrow.svg') top center;
+          margin-right: 18px;
+        }
+        &-right {
+          background: url('../img/icons/header__right-arrow.svg') top center;
+          margin-left: 18px;
+        }
+      }
+      &-active {
+        color: $main-color;
+      }
+      &-total {
+        color: #262626;
+      }
+    }
+
+    &-img {
+      background: url('../img/sections/img-header.jpg') top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1016px;
+      height: 572px;
+      box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+    }
+  }
+  &__desc {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    &-text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: rgba(#0b0c11, .2);
+      font-family: "League Spartan";
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+      transform: translateY(100%);
+    }
+  }
+}

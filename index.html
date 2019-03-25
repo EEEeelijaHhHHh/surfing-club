@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Surfing Club</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <h1>Hello world!</h1>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400" rel="stylesheet">
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+  <!-- Navigation -->
+    <div class="container">
+      <nav class="nav nav_main">
+        <a href="#" class="logo logo_main"><img src="../img/logo/logo.svg" alt="Surfing Club Logo"></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Stories</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Places</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Boards</a></li>
+        </ul>
+      </nav>
+      <!-- /navigation-->
+      <!-- Slider -->
+      <div class="header__slider-item">
+        <div class="header__slider-content">
+          <span class="header__slider-desc">Your</span>
+          <h1 class="header__slider-title">Beautiful Escape</h1>
+          <p class="header__slider-text">One of the greatest things about the sport of surfing is that you need only three things: your body,
+          a surfboard, and a wave.</p>
+        </div>
+        <div class="header__slider-controls">
+          <button class="header__slider-controls-arrow header__slider-controls-arrow-left"></button>
+          <span class="header__slider-controls-active">1</span> / <span
+            class="header__slider-controls-total">5</span>
+          <button class="header__slider-controls-arrow header__slider-controls-arrow-right"></button>
+        </div>
+        <div class="header__slider-img"></div>
+      </div>
+      <!-- /slider -->
+      <div class="header__desc">
+        <span class="header__desc-text">First&nbsp;Surfing&nbsp;Magazine</span>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+
+  <!-- Main javascript -->
   <script src="js/main.js"></script>
 </body>
+
 </html>

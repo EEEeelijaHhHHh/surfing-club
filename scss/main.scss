@@ -1,6 +1,24 @@
-@import 'normalize';
+/* Base */
+@import 'libs/normalize';
+@import 'fonts';
 
+/* Variables */
+$main-color: #5da8ef;
+
+/* Main styles */
 body {
-  background-color: green;
-  height: 100vh;
+  background: url('../img/bg/bg-lines.png') top center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
+
+.container {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Blocks */
+@import 'blocks/nav';
+@import 'blocks/header';
