@@ -1,0 +1,41 @@
+.contacts {
+  margin-bottom: 95px;
+  display: flex;
+
+  &__img {
+    width: 720px;
+    height: 475px;
+    background: url('../img/sections/img-6.jpg') top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    margin: 100px 0 0 45px;
+  }
+
+  &__desc {
+    color: (#0b0c11, .27);
+    font-family: "League Spartan";
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5.58px;
+  }
+
+  &__adress {
+    width: 336px;
+    display: block;
+    color: #333;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: .32px;
+    margin: 60px 0 65px 45px;
+  }
+
+  &__more-link {
+    color: $main-color;
+  }
+}
