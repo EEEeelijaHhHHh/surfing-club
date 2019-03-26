@@ -1,0 +1,57 @@
+.article {
+  display: flex;
+
+  &_first {
+    padding-bottom: 120px;
+    justify-content: space-between;
+  }
+  &_second {
+    padding-bottom: 110px;
+  }
+
+  &__img {
+    &_second {
+      margin-left: 215px;
+    }
+  }
+
+  &__content {
+    margin-top: 80px;
+    &_first {
+      margin-left: 70px;
+    }
+    &_second {
+      margin-left: 75px;
+    }
+  }
+
+  &__title {
+    color: #333;
+    font-family: "Playfair Display";
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .42px;
+    margin: 0;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 23px;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+
+  &__text {
+    width: 340px;
+    color: rgba(#616161, .65);
+    font-weight: 300;
+    line-height: (24 / 14);
+    letter-spacing: .35px;
+    margin: 30px 0 0 0;
+  }
+
+  &__more-link {
+    margin-top: 65px;
+  }
+}
