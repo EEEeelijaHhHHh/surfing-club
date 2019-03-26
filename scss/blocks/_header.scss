@@ -61,11 +61,11 @@
         border: none;
         outline: none;
         cursor: pointer;
-        &_left {
+        &_prev {
           background: url('../img/icons/header__left-arrow.svg') top center;
           margin-right: 18px;
         }
-        &_right {
+        &_next {
           background: url('../img/icons/header__right-arrow.svg') top center;
           margin-left: 18px;
         }

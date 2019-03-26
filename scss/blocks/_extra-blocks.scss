@@ -1,5 +1,6 @@
 .more-link {
   position: relative;
+  display: inline-block;
   color: #333333;
   font-family: "League Spartan";
   font-size: 9px;
@@ -9,9 +10,11 @@
   letter-spacing: 5.4px;
   transition: all .2s ease-in-out;
   padding-bottom: 10px;
+
   &:hover {
     color: $main-color;
   }
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -21,5 +24,19 @@
     height: 2px;
     width: 96%;
     background-color: rgba($main-color, .7);
+  }
+}
+
+.section {
+  &__title {
+    color: #333333;
+    font-family: "Playfair Display";
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .42px;
+
+    &_center {
+      text-align: center;
+    }
   }
 }
