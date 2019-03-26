@@ -88,23 +88,8 @@
     }
   }
   &-desc {
-    position: absolute;
     top: 60px;
     right: 0;
-    transform-origin: top left;
-    transform: rotate(-90deg);
-    &__text {
-      position: absolute;
-      top: 0;
-      right: 0;
-      color: rgba(#0b0c11, .2);
-      font-family: "League Spartan";
-      font-size: 9px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 5.4px;
-      transform: translateY(100%);
-    }
   }
   &-social {
     &__list {

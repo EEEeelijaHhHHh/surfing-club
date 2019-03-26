@@ -4,9 +4,17 @@
   &_first {
     padding-bottom: 120px;
     justify-content: space-between;
+    &-desc {
+      top: 0;
+      right: 0;
+    }
   }
   &_second {
     padding-bottom: 110px;
+    &-desc {
+      top: 0;
+      left: 170px;
+    }
   }
 
   &__img {
