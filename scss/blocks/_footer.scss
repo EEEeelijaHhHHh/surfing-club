@@ -22,4 +22,17 @@
     margin-right: 30px;
     &:last-child {margin-right: 0;}
   }
+  &__link {
+    text-decoration: none;
+    &:hover .social__icon::before {
+      color: $main-color;
+    }
+  }
+  &__icon {
+    &::before {
+      font-size: 16px;
+      color: #ccc;
+      transition: all .2s ease-in-out;
+    }
+  }
 }

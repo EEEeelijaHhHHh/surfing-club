@@ -18,20 +18,12 @@
       background-color: $main-color;
       border-radius: 50%;
       cursor: pointer;
-      &::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-        content: '';
-        width: 14px;
-        height: 17px;
-        background: url('../img/icons/player-start.svg') top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: 2px;
-      }
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 52%;
+      transform: translate(-50%, -50%);
     }
   }
   &__text {
