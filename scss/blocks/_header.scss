@@ -1,20 +1,21 @@
 .header {
-
-  &__slider {
-    &-item {
+  position: relative;
+  margin-bottom: 80px;
+  &-slider {
+    &__item {
       position: relative;
       display: flex;
       justify-content: flex-end;
     }
 
-    &-content {
+    &__content {
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
     }
 
-    &-desc {
+    &__desc {
       opacity: 0.9;
       color: $main-color;
       font-family: "League Spartan";
@@ -24,7 +25,7 @@
       letter-spacing: 5.4px;
     }
 
-    &-title {
+    &__title {
       color: #0b0c11;
       font-family: "Playfair Display";
       font-size: 62px;
@@ -32,7 +33,7 @@
       margin: 0;
     }
 
-    &-text {
+    &__text {
       width: 390px;
       color: #8f8f8f;
       font-weight: 300;
@@ -41,13 +42,13 @@
       margin: 0;
     }
 
-    &-controls {
+    &__controls {
       position: absolute;
       bottom: 0;
       left: 0;
       display: flex;
       align-items: center;
-      color: #ebebeb;
+      color: #ccc;
       font-family: "League Spartan";
       font-size: 10px;
       font-weight: 700;
@@ -60,11 +61,11 @@
         border: none;
         outline: none;
         cursor: pointer;
-        &-left {
+        &_left {
           background: url('../img/icons/header__left-arrow.svg') top center;
           margin-right: 18px;
         }
-        &-right {
+        &_right {
           background: url('../img/icons/header__right-arrow.svg') top center;
           margin-left: 18px;
         }
@@ -77,7 +78,7 @@
       }
     }
 
-    &-img {
+    &__img {
       background: url('../img/sections/img-header.jpg') top center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -86,13 +87,13 @@
       box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
     }
   }
-  &__desc {
+  &-desc {
     position: absolute;
     top: 60px;
     right: 0;
     transform-origin: top left;
     transform: rotate(-90deg);
-    &-text {
+    &__text {
       position: absolute;
       top: 0;
       right: 0;
@@ -103,6 +104,23 @@
       text-transform: uppercase;
       letter-spacing: 5.4px;
       transform: translateY(100%);
+    }
+  }
+  &-social {
+    &__list {
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    &__item {
+      list-style: none;
+      margin-bottom: 30px;
+      &:last-child {margin-bottom: 0;}
     }
   }
 }

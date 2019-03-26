@@ -1,0 +1,30 @@
+.quote {
+  width: 610px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(#333333, .9);
+  padding-bottom: 60px;
+  &__text {
+    font-family: "Playfair Display";
+    font-size: 26px;
+    line-height: (38 / 26);
+    letter-spacing: .26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  &__author {
+    font-family: "League Spartan";
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    &::after {
+      display: block;
+      content: '';
+      margin: 55px auto 0 auto;
+      width: 2px;
+      height: 100px;
+      background-color: $main-color;
+    }
+  }
+}
