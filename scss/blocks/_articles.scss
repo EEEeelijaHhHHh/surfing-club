@@ -2,6 +2,7 @@
   display: flex;
 
   &_first {
+    padding-top: 85px;
     padding-bottom: 120px;
     justify-content: space-between;
     &-desc {
@@ -10,7 +11,6 @@
     }
   }
   &_second {
-    padding-bottom: 110px;
     &-desc {
       top: 0;
       left: 170px;
