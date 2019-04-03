@@ -54,9 +54,10 @@
   document.querySelectorAll('[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+
+      const link = document.querySelector(this.getAttribute('href'));
+      console.log(link);
+      link.scrollIntoView({ behavior: 'smooth' });
     });
   });
 }());
@@ -81,4 +82,32 @@
   }
 
   player.addEventListener('click', togglePlayer);
+}());
+
+/* Email Validation */
+(function() {
+  const form = document.querySelector('.subscribe-form');
+  const input = form.querySelector('.subscribe-form__input');
+
+  function validateEmail(email) {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(email)
+  }
+
+  function validate(e) {
+    e.preventDefault();
+    const email = input.value;
+    const spanResult = document.querySelector('.subscribe-form__result');
+    
+    if (validateEmail(email)) {
+      spanResult.textContent = '* Successfully subscribed';
+      spanResult.classList.add('subscribe-form__result_success');
+    } else {
+      spanResult.textContent = '* Please enter a valid email!';
+      spanResult.classList.remove('subscribe-form__result_success');
+    }
+
+  }
+
+  form.addEventListener('submit', validate);
 }());

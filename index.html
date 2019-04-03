@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <div class="container">
       <nav class="nav nav_main">
-        <a href="#" class="logo logo_main"><img src="../img/logo/logo.svg" alt="Surfing Club Logo"></a>
+        <a href="#about" class="logo logo_main"><img src="../img/logo/logo.svg" alt="Surfing Club Logo"></a>
         <ul class="nav__list">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
@@ -107,13 +107,16 @@
     <!-- Header Social -->
     <ul class="header-social__list">
       <li class="header-social__item">
-        <a href="#" class="header-social__link"><span class="header-social__icon icon-tumblr"></span></a>
+        <a href="https://www.tumblr.com/" target="_blank" class="header-social__link"><span
+            class="header-social__icon icon-tumblr"></span></a>
       </li>
       <li class="header-social__item">
-        <a href="#" class="header-social__link"><span class="header-social__icon icon-twitter"></span></a>
+        <a href="https://twitter.com/" target="_blank" class="header-social__link"><span
+            class="header-social__icon icon-twitter"></span></a>
       </li>
       <li class="header-social__item">
-        <a href="#" class="header-social__link"><span class="header-social__icon icon-vimeo"></span></a>
+        <a href="https://vimeo.com/" class="header-social__link" target="_blank"><span
+            class="header-social__icon icon-vimeo"></span></a>
       </li>
     </ul>
     <!-- /header social -->
@@ -258,8 +261,9 @@
     <h2 class="subscribe__title section-title">Join the Club</h2>
     <p class="subscribe__text">By better understanding the various aspects of surfing, you will improve faster
       and have more fun in the water.</p>
-    <form class="subscribe-form">
-      <input type="email" class="subscribe-form__input" placeholder="Your E-mail">
+    <form class="subscribe-form" novalidate>
+      <span class="subscribe-form__result"></span>
+      <input type="email" class="subscribe-form__input" placeholder="Your E-mail" required>
       <button class="subscribe-form__button"></button>
     </form>
   </section>
@@ -283,7 +287,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <a href="#" class="footer__logo logo"><img src="../img/logo/logo.svg" alt="Surfing Club"></a>
+    <a href="#about" class="footer__logo logo"><img src="../img/logo/logo.svg" alt="Surfing Club"></a>
     <ul class="nav__list">
       <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
       <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
@@ -294,13 +298,16 @@
     </ul>
     <ul class="footer__social social__list">
       <li class="social__item">
-        <a href="#" class="social__link"><span class="social__icon icon-tumblr"></span></a>
+        <a href="https://www.tumblr.com/" target="_blank" class="social__link"><span
+            class="social__icon icon-tumblr"></span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link"><span class="social__icon icon-twitter"></span></a>
+        <a href="https://twitter.com/" target="_blank" class="social__link"><span
+            class="social__icon icon-twitter"></span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link"><span class="social__icon icon-vimeo"></span></a>
+        <a href="https://vimeo.com/" target="_blank" class="social__link"><span
+            class="social__icon icon-vimeo"></span></a>
       </li>
     </ul>
   </footer>
