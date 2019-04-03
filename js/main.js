@@ -39,6 +39,7 @@
     slideNumberItem.textContent = slideNumber;
   }
 
+
   next.addEventListener('click', () => {
     nextSlide();
   });
@@ -48,7 +49,7 @@
   });
 }());
 
-/* Anchor Smooth Scroll Animation */
+/* Anchor Smooth Scroll's Animation */
 (function() {
   document.querySelectorAll('[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -58,4 +59,26 @@
       });
     });
   });
+}());
+
+/* Video Player */
+(function() {
+  const player = document.querySelector('.media-player');
+  const video = player.querySelector('.media-player__video');
+  const control = player.querySelector('.media-player__control');
+
+  function togglePlayer() {
+    player.classList.toggle('media-player_active');
+    control.classList.toggle('media-player__control_active');
+
+    // Activated player
+    if (player.classList.contains('media-player_active')) {
+      video.controls = true;
+    } else {
+      video.controls = false;
+      video.pause();
+    }
+  }
+
+  player.addEventListener('click', togglePlayer);
 }());

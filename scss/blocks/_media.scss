@@ -5,20 +5,33 @@
     position: absolute;
     top: 40px;
     right: 0;
+    overflow: hidden;
     &__video {
       position: relative;
+      outline: none;
+      object-fit: cover;
+      cursor: pointer;
     }
     &__control {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      opacity: 1;
       width: 68px;
       height: 68px;
       box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
       background-color: $main-color;
       border-radius: 50%;
       cursor: pointer;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: darken($main-color, 10%);
+      }
+      &_active {
+        transform: translate(-50%, -300px);
+        opacity: 0;
+      }
     }
     &__icon {
       position: absolute;

@@ -16,13 +16,13 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="about">
     <!-- Navigation -->
     <div class="container">
       <nav class="nav nav_main">
         <a href="#" class="logo logo_main"><img src="../img/logo/logo.svg" alt="Surfing Club Logo"></a>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
           <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
           <li class="nav__item"><a href="#stories" class="nav__link">Stories</a></li>
@@ -35,12 +35,9 @@
       <!-- Slider -->
       <div class="header-slider">
         <div class="header-slider__controls">
-          <button class="header-slider__arrow header-slider__arrow_prev"><span
-              class="icon-prev-arrow"></span></button>
-          <span class="header-slider__count-active">1</span> / <span
-            class="header-slider__count-total">5</span>
-          <button class="header-slider__arrow header-slider__arrow_next"><span
-              class="icon-next-arrow"></span></button>
+          <button class="header-slider__arrow header-slider__arrow_prev"><span class="icon-prev-arrow"></span></button>
+          <span class="header-slider__count-active">1</span> / <span class="header-slider__count-total">5</span>
+          <button class="header-slider__arrow header-slider__arrow_next"><span class="icon-next-arrow"></span></button>
         </div>
         <!-- Slider Item 1 -->
         <div class="header-slider__item header-slider__item_current">
@@ -133,9 +130,11 @@
   <!-- Block Media -->
   <div class="media" id="media">
     <div class="container">
-      <img class="media__img" src="../img/sections/img-2.jpg" alt="Picture">
+      <img class="media__img" src="img/sections/img-2.jpg" alt="Picture">
       <div class="media-player">
-        <img class="media-player__video" src="../img/sections/img-3.jpg" alt="Video">
+        <video class="media-player__video" width="700" height="390" poster="img/sections/img-3.jpg">
+          <source src="video/surfing-video.mp4" type='video/mp4'>
+        </video>
         <div class="media-player__control">
           <span class="media-player__icon icon-player-start"></span>
         </div>
@@ -286,7 +285,7 @@
   <footer class="footer">
     <a href="#" class="footer__logo logo"><img src="../img/logo/logo.svg" alt="Surfing Club"></a>
     <ul class="nav__list">
-      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
       <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
       <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
       <li class="nav__item"><a href="#stories" class="nav__link">Stories</a></li>
