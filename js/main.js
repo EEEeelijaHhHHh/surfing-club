@@ -1,11 +1,25 @@
+/* Navigation Hamburger */
+(function() {
+  const button = document.querySelector('.nav-hamburger');
+  const list = document.querySelector('.nav__list');
+
+  button.addEventListener('click', () => {
+    list.classList.toggle('nav__list_active');
+    button.classList.toggle('nav-hamburger_active');
+    if (list.classList.contains('nav__list_active')) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  });
+}());
+
 /* Anchor Smooth Scroll's Animation */
 (function() {
   document.querySelectorAll('[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-
       const link = document.querySelector(this.getAttribute('href'));
-      console.log(link);
       link.scrollIntoView({ behavior: 'smooth' });
     });
   });

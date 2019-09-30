@@ -2,28 +2,81 @@
   display: inline-block;
   width: 16px;
   height: 44px;
+
   &_main {
-    margin-top: 38px;
     margin-right: 190px;
+
+    @media (max-width: $md) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $sm) {
+      z-index: 4;
+    }
   }
 }
 
 .nav {
   display: flex;
-  &_main {
-    height: 127px;
+  align-items: center;
+
+  @media (max-width: $md) {
+    justify-content: space-between;
   }
+
+  @media (max-width: $sm) {
+    height: 15vh !important;
+  }
+
+  &_main {
+    height: 120px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (max-width: $sm) {
+      position: fixed;
+      flex-direction: column;
+      background-color: #fff;
+      z-index: 3;
+      position: absolute;
+      height: 85vh;
+      top: 15vh;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: translate(0, -100%);
+      opacity: 0;
+      transition: all .4s ease-in;
+
+      &_active {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
   }
+
   &__item {
     margin-right: 45px;
-    &:last-child {margin-right: 0;}
+
+    @media (max-width: $md) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: $sm) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
+
   &__link {
     text-decoration: none;
     color: #0b0c11;
@@ -34,8 +87,66 @@
     letter-spacing: 5.58px;
     opacity: 0.9;
     transition: all .2s ease-in-out;
+
     &:hover {
       color: $main-color;
+    }
+
+    @media (max-width: $sm) {
+      line-height: 5;
+    }
+  }
+
+  &-hamburger {
+    position: relative;
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+
+    @media (max-width: $sm) {
+      display: block;
+      z-index: 4;
+    }
+
+    &__line,
+    &__line::after,
+    &__line::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $main-color;
+      border-radius: 10px;
+      transition: all .4s ease-in;
+    }
+
+    &__line {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+
+      &::after {
+        transform: translate(0, 8px);
+      }
+
+      &::before {
+        transform: translate(0, -8px);
+      }
+    }
+
+    &_active .nav-hamburger__line {
+      background-color: transparent;
+      &::after {
+        transform: rotate(45deg);
+      }
+      &::before {
+        transform: rotate(-45deg);
+      }
     }
   }
 }

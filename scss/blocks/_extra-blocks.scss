@@ -45,6 +45,9 @@
   position: absolute;
   transform-origin: top left;
   transform: rotate(-90deg);
+  @media (max-width: $sm) {
+    display: none;
+  }
 
   &__text {
     position: absolute;

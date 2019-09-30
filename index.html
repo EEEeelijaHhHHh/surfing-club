@@ -31,8 +31,12 @@
           <li class="nav__item"><a href="#subscribe" class="nav__link">Subscribe</a></li>
           <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
         </ul>
+        <button class="nav-hamburger">
+          <span class="nav-hamburger__line"></span>
+        </button>
       </nav>
       <!-- /navigation-->
+
 
       <!-- Slider -->
       <div class="header-slider">
@@ -44,7 +48,7 @@
         <div class="header-slider-wrapper">
           <!-- Slider Item 1 -->
           <div class="header-slider__item-wrapper">
-            <div class="header-slider__item container">
+            <div class="header-slider__item">
               <div class="header-slider__content">
                 <span class="header-slider__desc">Your</span>
                 <h1 class="header-slider__title">Beautiful Escape1</h1>
@@ -122,35 +126,37 @@
         <span class="side-desc__text">First&nbsp;Surfing&nbsp;Magazine</span>
       </div>
       <!-- /header description -->
+      <!-- Header Social -->
+      <ul class="header-social__list">
+        <li class="header-social__item">
+          <a href="https://www.tumblr.com/" target="_blank" class="header-social__link"><span
+              class="header-social__icon icon-tumblr"></span></a>
+        </li>
+        <li class="header-social__item">
+          <a href="https://twitter.com/" target="_blank" class="header-social__link"><span
+              class="header-social__icon icon-twitter"></span></a>
+        </li>
+        <li class="header-social__item">
+          <a href="https://vimeo.com/" class="header-social__link" target="_blank"><span
+              class="header-social__icon icon-vimeo"></span></a>
+        </li>
+      </ul>
+      <!-- /header social -->
     </div>
-    <!-- Header Social -->
-    <ul class="header-social__list">
-      <li class="header-social__item">
-        <a href="https://www.tumblr.com/" target="_blank" class="header-social__link"><span
-            class="header-social__icon icon-tumblr"></span></a>
-      </li>
-      <li class="header-social__item">
-        <a href="https://twitter.com/" target="_blank" class="header-social__link"><span
-            class="header-social__icon icon-twitter"></span></a>
-      </li>
-      <li class="header-social__item">
-        <a href="https://vimeo.com/" class="header-social__link" target="_blank"><span
-            class="header-social__icon icon-vimeo"></span></a>
-      </li>
-    </ul>
-    <!-- /header social -->
   </header>
   <!-- /header -->
 
   <!-- Block Quote -->
   <div class="quote">
-    <p class="quote__text">Surfing is the most blissful experience you can have on this planet, a taste of heaven.</p>
-    <div class="quote__author">John McCarthy</div>
+    <div class="container">
+      <p class="quote__text">Surfing is the most blissful experience you can have on this planet, a taste of heaven.</p>
+      <div class="quote__author">John McCarthy</div>
+    </div>
   </div>
   <!-- /block quote -->
 
   <!-- Block Media -->
-  <div class="media" id="media">
+  <div style="display: none" class="media" id="media">
     <div class="container">
       <img class="media__img" src="img/sections/img-2.jpg" alt="Picture">
       <div class="media-player">
@@ -169,7 +175,7 @@
   <!-- /block media -->
 
   <!-- Section Shop -->
-  <section class="shop" id="shop">
+  <section style="display: none" class="shop" id="shop">
     <h2 class="shop__title section-title section-title_center">Surfboards</h2>
     <div class="container">
       <!-- Shop Slider -->
@@ -268,7 +274,7 @@
   <!-- /section shop -->
 
   <!-- Section with the First Article -->
-  <section class="article article_first container" id="stories">
+  <section style="display: none" class="article article_first container" id="stories">
     <div class="article__content article__content_first">
       <h2 class="article__title">Surf Training</h2>
       <p class="article__text">By better understanding the various aspects of surfing, By better understanding the
@@ -285,7 +291,7 @@
   <!-- /section first article -->
 
   <!-- Section with the Second Article -->
-  <section class="article article_second container">
+  <section style="display: none" class="article article_second container">
     <div class="article_second-desc side-desc">
       <span class="side-desc__text">Surf&nbsp;Camps</span>
     </div>
@@ -303,7 +309,7 @@
   <!-- /section with the secnd article -->
 
   <!-- Section Subscribe -->
-  <section class="subscribe" id="subscribe">
+  <section style="display: none" class="subscribe" id="subscribe">
     <h2 class="subscribe__title section-title">Join the Club</h2>
     <p class="subscribe__text">By better understanding the various aspects of surfing, you will improve faster
       and have more fun in the water.</p>
@@ -316,7 +322,7 @@
   <!-- /section subscribe -->
 
   <!-- Block Contacts -->
-  <div class="contacts" id="contacts">
+  <div style="display: none" class="contacts" id="contacts">
     <div class="contacts__img"></div>
     <div class="contacts__content">
       <span class="contacts__desc">Our Camp</span>
@@ -332,7 +338,7 @@
   <!-- /block contacts -->
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer style="display: none" class="footer">
     <a href="#about" class="footer__logo logo"><img src="img/logo/logo.svg" alt="Surfing Club"></a>
     <ul class="nav__list">
       <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
