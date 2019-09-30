@@ -10,7 +10,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400" rel="stylesheet">
 
-  <!-- Main css -->
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -20,7 +22,7 @@
     <!-- Navigation -->
     <div class="container">
       <nav class="nav nav_main">
-        <a href="#about" class="logo logo_main"><img src="../img/logo/logo.svg" alt="Surfing Club Logo"></a>
+        <a href="#about" class="logo logo_main"><img src="img/logo/logo.svg" alt="Surfing Club Logo"></a>
         <ul class="nav__list">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
@@ -39,61 +41,78 @@
           <span class="header-slider__count-active">1</span> / <span class="header-slider__count-total">5</span>
           <button class="header-slider__arrow header-slider__arrow_next"><span class="icon-next-arrow"></span></button>
         </div>
-        <!-- Slider Item 1 -->
-        <div class="header-slider__item header-slider__item_current">
-          <div class="header-slider__content">
-            <span class="header-slider__desc">Your</span>
-            <h1 class="header-slider__title">Beautiful Escape1</h1>
-            <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need only
-              three things: your body, a surfboard, and a wave.</p>
+        <div class="header-slider-wrapper">
+          <!-- Slider Item 1 -->
+          <div class="header-slider__item-wrapper">
+            <div class="header-slider__item container">
+              <div class="header-slider__content">
+                <span class="header-slider__desc">Your</span>
+                <h1 class="header-slider__title">Beautiful Escape1</h1>
+                <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need
+                  only
+                  three things: your body, a surfboard, and a wave.</p>
+              </div>
+              <div class="header-slider__img"></div>
+            </div>
           </div>
-          <div class="header-slider__img"></div>
-        </div>
-        <!-- /slider item 1 -->
-        <!-- Slider Item 2 -->
-        <div class="header-slider__item">
-          <div class="header-slider__content">
-            <span class="header-slider__desc">Your</span>
-            <h1 class="header-slider__title">Beautiful Escape2</h1>
-            <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need only
-              three things: your body, a surfboard, and a wave.</p>
+          <!-- /slider item 1 -->
+          <!-- Slider Item 2 -->
+          <div class="header-slider-wrapper">
+            <div class="header-slider__item">
+              <div class="header-slider__content">
+                <span class="header-slider__desc">Your</span>
+                <h1 class="header-slider__title">Beautiful Escape2</h1>
+                <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need
+                  only
+                  three things: your body, a surfboard, and a wave.</p>
+              </div>
+              <div class="header-slider__img"></div>
+            </div>
           </div>
-          <div class="header-slider__img"></div>
-        </div>
-        <!-- /slider item 2 -->
-        <!-- Slider Item 3 -->
-        <div class="header-slider__item">
-          <div class="header-slider__content">
-            <span class="header-slider__desc">Your</span>
-            <h1 class="header-slider__title">Beautiful Escape3</h1>
-            <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need only
-              three things: your body, a surfboard, and a wave.</p>
+          <!-- /slider item 2 -->
+          <!-- Slider Item 3 -->
+          <div class="header-slider-wrapper">
+            <div class="header-slider__item">
+              <div class="header-slider__content">
+                <span class="header-slider__desc">Your</span>
+                <h1 class="header-slider__title">Beautiful Escape3</h1>
+                <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need
+                  only
+                  three things: your body, a surfboard, and a wave.</p>
+              </div>
+              <div class="header-slider__img"></div>
+            </div>
           </div>
-          <div class="header-slider__img"></div>
-        </div>
-        <!-- /slider item 3 -->
-        <!-- Slider Item 4 -->
-        <div class="header-slider__item">
-          <div class="header-slider__content">
-            <span class="header-slider__desc">Your</span>
-            <h1 class="header-slider__title">Beautiful Escape4</h1>
-            <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need only
-              three things: your body, a surfboard, and a wave.</p>
+          <!-- /slider item 3 -->
+          <!-- Slider Item 4 -->
+          <div class="header-slider-wrapper">
+            <div class="header-slider__item">
+              <div class="header-slider__content">
+                <span class="header-slider__desc">Your</span>
+                <h1 class="header-slider__title">Beautiful Escape4</h1>
+                <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need
+                  only
+                  three things: your body, a surfboard, and a wave.</p>
+              </div>
+              <div class="header-slider__img"></div>
+            </div>
           </div>
-          <div class="header-slider__img"></div>
-        </div>
-        <!-- /slider item 4 -->
-        <!-- Slider Item 5 -->
-        <div class="header-slider__item">
-          <div class="header-slider__content">
-            <span class="header-slider__desc">Your</span>
-            <h1 class="header-slider__title">Beautiful Escape5</h1>
-            <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need only
-              three things: your body, a surfboard, and a wave.</p>
+          <!-- /slider item 4 -->
+          <!-- Slider Item 5 -->
+          <div class="header-slider-wrapper">
+            <div class="header-slider__item">
+              <div class="header-slider__content">
+                <span class="header-slider__desc">Your</span>
+                <h1 class="header-slider__title">Beautiful Escape5</h1>
+                <p class="header-slider__text">One of the greatest things about the sport of surfing is that you need
+                  only
+                  three things: your body, a surfboard, and a wave.</p>
+              </div>
+              <div class="header-slider__img"></div>
+            </div>
           </div>
-          <div class="header-slider__img"></div>
+          <!-- /slider item 5 -->
         </div>
-        <!-- /slider item 5 -->
 
       </div>
       <!-- /slider -->
@@ -152,59 +171,86 @@
   <!-- Section Shop -->
   <section class="shop" id="shop">
     <h2 class="shop__title section-title section-title_center">Surfboards</h2>
-    <!-- Shop Slider -->
-    <div class="shop-slider container">
-      <!-- Shop Slider Item -->
-      <div class="shop-slider__item">
-        <div class="shop-slider__img-wrap">
-          <img src="../img/boards/board-1.png" alt="Board" class="shop-slider__img">
-        </div>
-        <div class="shop-slider__content">
-          <div class="shop-slider__desc">
-            <span class="shop-slider__category">Funboards</span>
-            <h3 class="shop-slider__title">Chilli Rare Bird</h3>
+    <div class="container">
+      <!-- Shop Slider -->
+      <div class="shop-slider">
+        <!-- Shop Slider Item -->
+        <div class="shop-slider__item-wrapper">
+          <div class="shop-slider__item">
+            <div class="shop-slider__img-wrap">
+              <img src="img/boards/board-1.png" alt="Board" class="shop-slider__img">
+            </div>
+            <div class="shop-slider__content">
+              <div class="shop-slider__desc">
+                <span class="shop-slider__category">Funboards</span>
+                <h3 class="shop-slider__title">Chilli Rare Bird</h3>
+              </div>
+              <div class="shop-slider__buy">
+                <span class="shop-slider__price">$890</span>
+                <a href="#" class="shop-slider__button">Buy</a>
+              </div>
+            </div>
           </div>
-          <div class="shop-slider__buy">
-            <span class="shop-slider__price">$890</span>
-            <a href="#" class="shop-slider__button">Buy</a>
+        </div>
+        <!-- /shop slider item -->
+        <!-- Shop Slider Item -->
+        <div class="shop-slider__item-wrapper">
+          <div class="shop-slider__item">
+            <div class="shop-slider__img-wrap">
+              <img src="img/boards/board-2.png" alt="Board" class="shop-slider__img">
+            </div>
+            <div class="shop-slider__content">
+              <div class="shop-slider__desc">
+                <span class="shop-slider__category">Surfboards</span>
+                <h3 class="shop-slider__title">Emery NEM XF</h3>
+              </div>
+              <div class="shop-slider__buy">
+                <span class="shop-slider__price">$950</span>
+                <a href="#" class="shop-slider__button">Buy</a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- /Shop slider item -->
+        <!-- Shop Slider Item -->
+        <div class="shop-slider__item-wrapper">
+          <div class="shop-slider__item">
+            <div class="shop-slider__img-wrap">
+              <img src="img/boards/board-3.png" alt="Board" class="shop-slider__img">
+            </div>
+            <div class="shop-slider__content">
+              <div class="shop-slider__desc">
+                <span class="shop-slider__category">Funboards</span>
+                <h3 class="shop-slider__title">Agency GROM</h3>
+              </div>
+              <div class="shop-slider__buy">
+                <span class="shop-slider__price">$670</span>
+                <a href="#" class="shop-slider__button">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /shop slider item -->
+        <!-- Shop Slider Item -->
+        <div class="shop-slider__item-wrapper">
+          <div class="shop-slider__item">
+            <div class="shop-slider__img-wrap">
+              <img src="img/boards/board-3.png" alt="Board" class="shop-slider__img">
+            </div>
+            <div class="shop-slider__content">
+              <div class="shop-slider__desc">
+                <span class="shop-slider__category">Funboards</span>
+                <h3 class="shop-slider__title">Agency GROM</h3>
+              </div>
+              <div class="shop-slider__buy">
+                <span class="shop-slider__price">$670</span>
+                <a href="#" class="shop-slider__button">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /shop slider item -->
       </div>
-      <!-- /shop slider item -->
-      <!-- Shop Slider Item -->
-      <div class="shop-slider__item">
-        <div class="shop-slider__img-wrap">
-          <img src="../img/boards/board-2.png" alt="Board" class="shop-slider__img">
-        </div>
-        <div class="shop-slider__content">
-          <div class="shop-slider__desc">
-            <span class="shop-slider__category">Surfboards</span>
-            <h3 class="shop-slider__title">Emery NEM XF</h3>
-          </div>
-          <div class="shop-slider__buy">
-            <span class="shop-slider__price">$950</span>
-            <a href="#" class="shop-slider__button">Buy</a>
-          </div>
-        </div>
-      </div>
-      <!-- /Shop slider item -->
-      <!-- Shop Slider Item -->
-      <div class="shop-slider__item">
-        <div class="shop-slider__img-wrap">
-          <img src="../img/boards/board-3.png" alt="Board" class="shop-slider__img">
-        </div>
-        <div class="shop-slider__content">
-          <div class="shop-slider__desc">
-            <span class="shop-slider__category">Funboards</span>
-            <h3 class="shop-slider__title">Agency GROM</h3>
-          </div>
-          <div class="shop-slider__buy">
-            <span class="shop-slider__price">$670</span>
-            <a href="#" class="shop-slider__button">Buy</a>
-          </div>
-        </div>
-      </div>
-      <!-- /shop slider item -->
     </div>
     <!-- /shop slider -->
 
@@ -287,7 +333,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <a href="#about" class="footer__logo logo"><img src="../img/logo/logo.svg" alt="Surfing Club"></a>
+    <a href="#about" class="footer__logo logo"><img src="img/logo/logo.svg" alt="Surfing Club"></a>
     <ul class="nav__list">
       <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
       <li class="nav__item"><a href="#media" class="nav__link">Events</a></li>
@@ -313,6 +359,13 @@
   </footer>
   <!-- /footer -->
 
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Sliders JS -->
+  <script src="js/sliders.js"></script>
   <!-- Main javascript -->
   <script src="js/main.js"></script>
 </body>

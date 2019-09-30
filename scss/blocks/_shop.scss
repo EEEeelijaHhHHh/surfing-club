@@ -5,7 +5,7 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
 
   &__more-link {
@@ -14,13 +14,17 @@
   }
 
   &-slider {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    cursor: pointer;
 
     &__item {
+      padding-top: 150px;
+      position: relative;
       display: flex;
       align-items: center;
+
+      &-wrapper {
+        outline: none;
+      }
     }
 
     &__img-wrap {
