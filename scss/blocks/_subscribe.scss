@@ -2,6 +2,9 @@
   text-align: center;
   padding-top: 110px;
   padding-bottom: 70px;
+  @media (max-width: $sm) {
+    padding-top: 60px;
+  }
 
   &::before {
     display: block;
@@ -10,6 +13,9 @@
     height: 100px;
     background-color: $main-color;
     margin: 0 auto 60px auto;
+    @media (max-width: $sm) {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -24,6 +30,9 @@
     font-weight: 300;
     line-height: (24 / 14);
     letter-spacing: .35px;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
 
   &-form {
@@ -32,6 +41,9 @@
     margin: 0 auto;
     width: 590px;
     height: 50px;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
 
     &__result {
       position: absolute;
@@ -58,6 +70,10 @@
       padding: 0 30px;
       transition: all .2s ease-in-out;
 
+      @media (max-width: $sm) {
+        padding-right: 90px;
+      }
+
       &::placeholder {
         color: (#333, .9);
       }
@@ -78,6 +94,10 @@
       background-color: $main-color;
       border: none;
       cursor: pointer;
+
+      @media (max-width: $xs) {
+        right: 20px;
+      }
 
       &::before {
         display: block;
