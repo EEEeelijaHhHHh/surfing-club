@@ -88,3 +88,8 @@
 
   form.addEventListener('submit', validate);
 }());
+
+/* WOW JS Init */
+(function () {
+  new WOW().init();
+}());
