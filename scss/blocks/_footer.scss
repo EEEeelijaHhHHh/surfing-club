@@ -3,11 +3,17 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 95px;
+  @media (max-width: $sm) {
+    padding-bottom: 60px;
+  }
   &__logo {
     margin-bottom: 40px;
   }
   &__social {
     margin-top: 40px !important;
+    @media (max-width: $sm) {
+      margin-top: 0 !important;
+    }
   }
 }
 
