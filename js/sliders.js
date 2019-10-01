@@ -23,6 +23,20 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: $('.shop-slider__arrow_next'),
-    prevArrow: $('.shop-slider__arrow_prev')
+    prevArrow: $('.shop-slider__arrow_prev'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 576,
+          settings: {
+            slidesToShow: 1
+          }
+      }
+    ]
   });
 });
