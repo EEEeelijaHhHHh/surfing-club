@@ -1,9 +1,20 @@
 /* Navigation Hamburger */
-(function() {
-  const button = document.querySelector('.nav-hamburger');
+(function () {
   const list = document.querySelector('.nav__list');
+  const button = document.querySelector('.nav-hamburger');
+  const links = document.querySelectorAll('.nav__link');
 
   button.addEventListener('click', () => {
+    toggleMenu();
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMenu();
+    });
+  });
+
+  function toggleMenu() {
     list.classList.toggle('nav__list_active');
     button.classList.toggle('nav-hamburger_active');
     if (list.classList.contains('nav__list_active')) {
@@ -11,22 +22,24 @@
     } else {
       document.body.style.overflow = "scroll";
     }
-  });
+  }
 }());
 
 /* Anchor Smooth Scroll's Animation */
-(function() {
+(function () {
   document.querySelectorAll('[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const link = document.querySelector(this.getAttribute('href'));
-      link.scrollIntoView({ behavior: 'smooth' });
+      link.scrollIntoView({
+        behavior: 'smooth'
+      });
     });
   });
 }());
 
 /* Video Player */
-(function() {
+(function () {
   const player = document.querySelector('.media-player');
   const video = player.querySelector('.media-player__video');
   const control = player.querySelector('.media-player__control');
@@ -49,7 +62,7 @@
 }());
 
 /* Email Validation */
-(function() {
+(function () {
   const form = document.querySelector('.subscribe-form');
   const input = form.querySelector('.subscribe-form__input');
 
@@ -62,7 +75,7 @@
     e.preventDefault();
     const email = input.value;
     const spanResult = document.querySelector('.subscribe-form__result');
-    
+
     if (validateEmail(email)) {
       spanResult.textContent = '* Successfully subscribed';
       spanResult.classList.add('subscribe-form__result_success');
