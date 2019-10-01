@@ -1,4 +1,6 @@
 .article {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
 
@@ -22,6 +24,7 @@
     &-desc {
       top: 0;
       left: 170px;
+
       @media (max-width: $md) {
         left: 20px;
       }

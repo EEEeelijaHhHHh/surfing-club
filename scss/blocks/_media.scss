@@ -1,6 +1,8 @@
 .media {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 150px;
+  z-index: 1;
 
   @media (max-width: $sm) {
     padding-bottom: 30px;
