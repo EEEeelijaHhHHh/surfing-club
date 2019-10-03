@@ -1,6 +1,7 @@
 .header {
   position: relative;
   margin-bottom: 80px;
+
   @media (max-width: $sm) {
     margin-bottom: 60px;
   }
@@ -11,6 +12,10 @@
 
     @media (max-width: $md) {
       height: auto;
+    }
+
+    &-wrapper {
+      outline: none;
     }
 
     &__item {
@@ -40,7 +45,7 @@
         top: 0;
         transform: translate(0, 0);
         order: 2;
-        padding: 20px 0 40px 0;
+        padding: 20px 0;
       }
     }
 
@@ -101,8 +106,9 @@
       z-index: 1;
 
       @media (max-width: $md) {
-        left: 50%;
-        transform: translate(-50%, 0);
+        position: relative;
+        width: 105px;
+        margin: 0 auto;
       }
     }
 

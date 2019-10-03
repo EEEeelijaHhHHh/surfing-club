@@ -82,12 +82,12 @@
 
   &_water {
     background: url('../img/bg/bg-water.jpg') no-repeat;
-    background-size: 100% 75%;
+    background-size: cover;
     background-position: center 210px;
   }
 
   &_surfer {
     background: url('../img/bg/bg-surfer.jpg') no-repeat top center;
-    background-size: 100% 1900px;
+    background-size: cover;
   }
 }
